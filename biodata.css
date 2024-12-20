@@ -1,0 +1,257 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #eef2f3;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #004aad, #002f6c);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Profile Banner Section */
+.profile-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.profile-banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.profile-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styling */
+section {
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #004aad;
+    font-size: 2em;
+    font-weight: 600;
+    border-bottom: 3px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Personal Details Section */
+.personal-details {
+    margin-bottom: 40px;
+}
+
+.personal-details .detail-item {
+    margin-bottom: 20px;
+}
+
+.personal-details label {
+    font-weight: bold;
+}
+
+.personal-details p {
+    font-size: 1.1em;
+}
+
+/* Contact Information Section */
+.contact-information {
+    margin-bottom: 40px;
+}
+
+.contact-information .contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-information label {
+    font-weight: bold;
+}
+
+.contact-information p {
+    font-size: 1.1em;
+}
+
+.contact-information a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.contact-information a:hover {
+    text-decoration: underline;
+}
+
+/* Hobbies Section */
+.hobbies-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.hobbies-section ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+/* Languages Section */
+.languages-section .language-item {
+    margin-bottom: 20px;
+}
+
+.languages-section label {
+    font-weight: bold;
+}
+
+.languages-section p {
+    font-size: 1.1em;
+}
+
+/* Social Links Section */
+.social-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-links ul li {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+.social-links ul li a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.social-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input,
+footer form textarea {
+    margin: 10px;
+    padding: 8px;
+    font-size: 1em;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer form button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .profile-banner-img {
+        height: 250px;
+    }
+
+    footer form input,
+    footer form textarea {
+        width: 90%;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+}
